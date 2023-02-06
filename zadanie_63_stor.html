@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<title>Jakub Stormowski</title>
+	</head>
+			<body>
+					<p style="color:green;">Menu</p>
+					<p style="color:red;">1-czerwony</p>
+					<p style="color:blue;">2-niebieski</p>
+						<button type="submit" value="Oblicz" onclick="Kolor()">Oblicz</button><br>
+					<p id="wynik"></p>
+  				<script>
+    				function Kolor()
+    			{
+       				x=prompt("Podaj Kolor");
+        			wynik=document.getElementById("wynik");
+        				if(x == 1 ||  x.toLowerCase() ===  "czerwony")
+        				{
+        					document.write("<span style=\"font-size:2cm; color: red;\">Wczytałeś kolor czerwony</span>");
+        				}
+        				else if(x == 2 ||  x.toLowerCase() ===  "niebieski")
+        				{
+        					document.write("<span style=\"font-size:4cm; color: blue;\">Wczytałeś kolor niebieski</span>");
+        				}
+        				else
+						{
+            				document.write("<span style=\"font-size:3cm; color: black;\">Błednie wczytany kolor</span>");
+        				}
+    			}
+  				</script>
+			</body>
+</html>
