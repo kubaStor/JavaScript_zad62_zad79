@@ -1,0 +1,41 @@
+<textarea rows="80" cols="220"><html>
+    <!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<title>Jakub Stormowski</title>
+	</head>
+            <body>
+                <script>
+                    var l1_t_stor,l2_t_stor,pocz_stor,tekst_stor;
+                    l1_t_stor = parseFloat(prompt("Podaj Pierwszą liczbe z  przedzialu 20-60"));
+                    if(l1_t_stor < 20 || l1_t_stor > 60)
+                    {
+                        document.write("liczba "+l1_t_stor+" nie należy do przedziału<br>");
+                    }
+                    l2_t_stor = parseFloat(prompt("Podaj Drugą liczbe z  przedzialu 20-60"));
+                    if(l2_t_stor < 20 || l2_t_stor > 60)
+                    {
+                        document.write("liczba "+l2_t_stor+" nie należy do przedziału<br>");
+                    }
+                    pocz_stor = parseFloat(prompt("Podaj wartość początkowej wielkości tekstu w px"));
+                    tekst_stor = prompt("Podaj dowolny tekst");
+                    if(l1_t_stor<l2_t_stor)
+                    {
+                        for(let i=pocz_stor;i<=95;i+=5)
+                        {
+                            document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_stor+"<br></p>");
+                        }
+                    }
+                    else
+                    {
+                        for(let i=pocz_stor;i>=5;i-=5)
+                        {
+                            document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_stor+"<br></p>");
+                        }
+                    }
+                    document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_kow+"<br></p>");
+        </script>
+    </body>
+</html>
+<!-- Jakub Stormowski -->
+    </textarea>
